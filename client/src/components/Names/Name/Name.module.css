@@ -1,0 +1,12 @@
+.Wrapper {
+    display: flex;
+    padding: 10px;
+    justify-content: space-around;
+    margin: auto;
+    width: 200px;
+    border-bottom: 1px solid black;
+}
+
+.Item {
+
+}
