@@ -1,12 +1,12 @@
-import React from 'react';
-
-import classes from './Name.module.css';
+import React, { Fragment } from 'react';
 
 const Name = (props) => (
-    <div className={classes.Wrapper}>
-        <div className={classes.Item}>{props.name}</div>
-        <div className={classes.Item}>{props.amount}</div>
-    </div>
+    <Fragment>
+        <tr>
+            <td>{props.name}</td>
+            <td>{props.amount}</td>
+        </tr>
+    </Fragment>
 );
 
 export default Name;

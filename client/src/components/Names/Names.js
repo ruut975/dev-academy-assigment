@@ -1,7 +1,5 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 import Name from './Name/Name';
-
-import classes from './Names.module.css';
 
 const Names = (props) => {
 
@@ -18,11 +16,9 @@ let namesArray = <p style={{textAlign: 'center'}}>Something went wrong</p>
 });  
 
     return (
-        <div>
-            <section className={classes.Names}>
-                {namesArray}
-            </section>
-        </div>
+        <Fragment>
+            {namesArray}    
+        </Fragment>
     )
 };
 
