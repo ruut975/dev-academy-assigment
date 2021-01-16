@@ -1,7 +1,8 @@
 import React, { useState, useEffect, Fragment } from 'react';
 import axios from 'axios';
 import { API_URL } from '../../constants';
-import NameListingTable from '../../components/NameListingTable/NameListingTable'
+import NameListingTable from '../../components/NameListingTable/NameListingTable';
+import NameInput from '../../components/NameInput/NameInput';
 
 import 'semantic-ui-css/semantic.min.css';
 
@@ -26,10 +27,21 @@ const NameLister = () => {
         return sum;
     };
 
-    const table = names.length ? <NameListingTable className={classes.Wrapper} nameData={names} sumOfNames={countSumOfNames} /> : null;
-    
+    const findName = (name) => {
+        const found = names.find(item => item.name === name);
+        return found;
+    };
+
+    let table = null;
+    let input = null;
+
+    if (names.length) {
+        table = <NameListingTable className={classes.Wrapper} nameData={names} sumOfNames={countSumOfNames} />;
+        input = <NameInput search={findName} />
+    }
     return (
         <Fragment>
+            {input}
             {table}
         </Fragment>
     );
