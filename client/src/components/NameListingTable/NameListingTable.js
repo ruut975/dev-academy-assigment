@@ -33,7 +33,7 @@ const NameListingTable = (props) => {
   const { column, data, direction } = state;
 
   return (
-    <Table sortable celled fixed>
+    <Table sortable celled fixed unstackable>
       <Table.Header>
         <Table.Row>
           <Table.HeaderCell
@@ -62,8 +62,10 @@ const NameListingTable = (props) => {
 
       <Table.Footer>
         <Table.Row>
-          <Table.Cell></Table.Cell>
-          <Table.Cell>Sum: {props.sumOfNames}</Table.Cell>
+          <Table.HeaderCell></Table.HeaderCell>
+          <Table.HeaderCell>
+            Sum: <strong>{props.sumOfNames}</strong>
+          </Table.HeaderCell>
         </Table.Row>
       </Table.Footer>
     </Table>

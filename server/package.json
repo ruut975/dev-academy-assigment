@@ -1,0 +1,24 @@
+{
+  "name": "dev-academy-2021",
+  "version": "1.0.0",
+  "description": "",
+  "main": "nameController.js",
+  "dependencies": {
+    "fs": "^0.0.1-security",
+    "express": "^4.17.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ruut975/dev-academy-assigment.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ruut975/dev-academy-assigment/issues"
+  },
+  "homepage": "https://github.com/ruut975/dev-academy-assigment#readme"
+}

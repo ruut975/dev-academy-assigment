@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import { API_URL } from "../../constants";
+import Header from "../../components/Header/Header";
 import NameListingTable from "../../components/NameListingTable/NameListingTable";
 import NameSearch from "../../components/NameSearch/NameSearch";
 
@@ -45,9 +46,12 @@ const NameLister = () => {
     input = <NameSearch search={findName} />;
   }
   return (
-    <div className={classes.Wrapper}>
-      {input}
-      {table}
+    <div className={classes.NameLister}>
+      <Header />
+      <main className={classes.Wrapper}>
+        {input}
+        {table}
+      </main>
     </div>
   );
 };

@@ -1,4 +1,8 @@
+.NameLister {
+    background: linear-gradient(110deg, #c01426, #e9e7e9);
+}
 .Wrapper {
     width: 400px;
-    margin: 30px auto;
+    margin: 20px auto;
+    padding-bottom: 40px;
 }

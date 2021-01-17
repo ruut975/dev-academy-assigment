@@ -1,5 +1,7 @@
-import React, { useState, Fragment } from "react";
+import React, { useState } from "react";
 import { Input } from "semantic-ui-react";
+
+import classes from "./NameSearch.module.css";
 
 const NameSearch = (props) => {
   const [input, setInput] = useState("");
@@ -12,19 +14,19 @@ const NameSearch = (props) => {
   let result = "";
   if (input.length) {
     result = found ? (
-      <h4>
-        Found {found.amount} persons with a name of {found.name}
+      <h4 className={classes.ResultText}>
+        Found {found.amount} persons with a name of {found.name}!
       </h4>
     ) : (
-      <p>No matching name found</p>
+      <p className={classes.ResultText}>No matching name found</p>
     );
   }
 
   return (
-    <Fragment>
-      <Input icon='users' iconPosition='left' placeholder="Type name..." onChange={(e) => inputHandler(e)} />
+    <div className={classes.Wrapper}>
+      <Input className={classes.InputBar}icon='users' iconPosition='left' placeholder="Type name..." onChange={(e) => inputHandler(e)} />
       {result}
-    </Fragment>
+    </div >
   );
 };
 
