@@ -1,19 +1,23 @@
 .Header {
-    height: 60px;
-    background-color: rgb(156, 156, 156);
-    background: linear-gradient(110deg, #474747, #979697);
-    border-bottom: 1px solid white;
+  height: 60px;
+  background-color: rgb(156, 156, 156);
+  background: linear-gradient(110deg, #474747, #979697);
+  border-bottom: 1px solid white;
 }
 
 .Info {
-    height: 100%;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    color: white;
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: white;
 }
 
 .InfoItem {
-    margin: 0;
-    flex: 1;
+  margin: 0;
+  flex: 1;
+}
+
+.InfoHeader {
+  flex: 3;
 }

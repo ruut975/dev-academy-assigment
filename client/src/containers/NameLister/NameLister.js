@@ -6,7 +6,6 @@ import NameListingTable from "../../components/NameListingTable/NameListingTable
 import NameSearch from "../../components/NameSearch/NameSearch";
 
 import "semantic-ui-css/semantic.min.css";
-
 import classes from "./NameLister.module.css";
 
 const NameLister = () => {
