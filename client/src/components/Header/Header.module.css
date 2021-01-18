@@ -1,7 +1,7 @@
 .Header {
   height: 60px;
   background-color: rgb(156, 156, 156);
-  background: linear-gradient(110deg, #474747, #979697);
+  background: linear-gradient(110deg, rgba(0, 0, 0, 0.87), #F9FAFB);
   border-bottom: 1px solid white;
 }
 
@@ -10,7 +10,7 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
-  color: white;
+  color: rgba(0, 0, 0, 0.87);
 }
 
 .InfoItem {

@@ -43,6 +43,8 @@ const NameLister = () => {
       />
     );
     input = <NameSearch search={findName} />;
+  } else {
+      table = <h3>Unable to load names...</h3>
   }
   return (
     <div className={classes.NameLister}>
