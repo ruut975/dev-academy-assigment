@@ -1,10 +1,9 @@
 {
-  "name": "dev-academy-2021",
+  "name": "name-lister-server",
   "version": "1.0.0",
   "description": "",
-  "main": "nameController.js",
+  "main": "index.js",
   "dependencies": {
-    "fs": "^0.0.1-security",
     "express": "^4.17.1"
   },
   "devDependencies": {},

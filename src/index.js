@@ -1,5 +1,6 @@
 const express = require("express");
 const fs = require("fs");
+const path = require("path");
 
 const app = express();
 app.use(express.json());
@@ -15,7 +16,7 @@ app.use((req, res, next) => {
 });
 
 const readNamesFromFile = () => {
-  const file = fs.readFileSync("./names.json", "utf-8", (err) =>
+  const file = fs.readFileSync(path.join(__dirname, "./names.json"), "utf-8", (err) =>
     console.log(err)
   );
   return JSON.parse(file);
@@ -30,7 +31,7 @@ app.get("/names", (req, res) => {
   }
 });
 
-const port = (process.env.PORT || 5000);
+const port = (process.env.PORT || 5001);
 app.listen(port, () => {
   console.log(`Server running on port: ${port}`);
 });
