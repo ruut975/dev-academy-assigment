@@ -10,7 +10,7 @@ Go to client and server directories and run `npm install` in from the command li
 
 ## 2. Start the server
 
-Go to server/src/ directory and start the development server by running `node index.js` from the commandline.
+Go to server/ directory and start the development server by running `npm start` from the commandline.
 
 ## 3. Start the client app
 
