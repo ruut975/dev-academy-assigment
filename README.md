@@ -26,4 +26,4 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 These two branches are created for deploying the app in Heroku platform. They contain modifications that allow the app to be live in Heroku server.
 You can open the live app through the following link but be aware that launchig the app may take some time because of the free version of the service I currently have. 
 
-https://name-lister-client.herokuapp.com/
+https://name-lister-client.herokuapp.com
